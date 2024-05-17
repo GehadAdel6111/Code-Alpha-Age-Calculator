@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Images/calendar.png">
+    <title>Age Calculator</title>
+</head>
+<body onload="setDate2()">
+    <div class="container" style="width: 60%;">
+        <div class="border">
+            <form action="" style="width: 100%;">
+                <h2>Age Calculator</h2>
+                <div class="date1" style="width: 90%;">
+                    <label for="Date Of Birth">Date Of Birth :</label>
+                    <input type="date" name="date1" id="date1">
+                </div>
+
+                <div class="date2" style="width: 90%;">
+                    <label for="Age at the Date">Age at the Date :</label>
+                    <input type="date" name="date2" id="date2">
+                </div>
+                <div class="btnborder" style="width: 40%;">
+                    <button style="width: 100%;" onclick="calculateAge(event)">Calculate</button>
+                </div>
+            </form>
+        </div>
+        <div id="alert" class="alert hidden"> <span id="alert-content"></span>
+            <div class="closebtn">
+                <button onclick="closeAlert()" id="close">Close</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
